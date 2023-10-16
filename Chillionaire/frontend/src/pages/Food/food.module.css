@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+.container > * {
+  min-width: 25rem;
+  max-width: 40rem;
+}
+
+.image {
+  border-radius: 3rem;
+  flex: 1 0;
+  object-fit: cover;
+  height: 35rem;
+  margin: 1rem;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 1.8rem;
+  margin: 2rem 2rem 2rem 0;
+  color: green;
+}
+
+.price::before {
+  content: 'Price: ';
+  color: darkgrey;
+}
+
+.container button {
+  color: white;
+  background-color: #e72929;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 10rem;
+  outline: none;
+}
+
+.container button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
